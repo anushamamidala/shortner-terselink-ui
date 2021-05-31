@@ -1,0 +1,37 @@
+@import "../../../theme/colors.scss";
+
+
+#overviewChartContainer{
+    .click-summary-progress-container{
+        margin-top: 20px;
+    }
+    .chart-main-container {
+        padding: 0 !important;
+        margin-right: 20px;
+    }
+    .progress-container {
+        background-color: $white;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 5px #001ade17;
+        border-radius: 2px;
+        min-height: 205px;
+    }
+    .status-category-title{
+        font-size: 0.7rem;
+        margin: 10px;
+        transform: translateY(-10px);
+    }
+    .top-performing-progress {
+        max-height: 115px;
+        max-width: 115px;
+        padding: 0px;
+    }
+    .loading-icon {
+        height: 40px;
+    }
+    .progress-text{
+        color: $lightgray;
+    }
+}

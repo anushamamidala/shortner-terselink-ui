@@ -1,0 +1,68 @@
+@import "../../../theme/colors.scss";
+
+#clicksSummaryContainer {
+    margin: 40px 20px;
+    max-width: 1000px;
+    margin-top: 0px;
+    .header {
+        color: $primary;
+        margin: 10px 0px;
+    }
+    .chart-container {
+        margin-top: 30px;
+    }
+    .chart-main-container {
+        padding: 0 !important;
+        margin-right: 20px;
+    }
+    .click-summary-chart-container {
+        border-radius: 2px;
+        background-color: $white;
+        box-shadow: 0px 0px 5px $primaryShadow2;
+        padding: 30px 0px 0px 10px;
+        min-height: 300px;
+        position: relative;
+
+        .recharts-responsive-container {
+            transform: translateX(-30px);
+        }
+        .period-buttons-container {
+            padding: 5px 10px;
+            margin-right: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            .period-button {
+                margin: 0px 2px;
+                border: none;
+                background-color: $white;
+                border-radius: 5px;
+                font-size: 0.8rem;
+                padding: 2px 5px;
+                outline: none;
+                opacity: 0.4;
+            }
+            .Selected {
+                opacity: 1;
+                color: $secondary;
+                font-weight: bold;
+            }
+        }
+        .note {
+            color: $lightgray;
+            margin-top: 5px;
+            font-weight: 500;
+            font-size: 0.7rem;
+        }
+    }
+    .inner-container {
+        width: 100%;
+        min-height: 365px;
+    }
+    .loading-icon {
+        height: 40px;
+    }
+}

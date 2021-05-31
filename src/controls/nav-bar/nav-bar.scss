@@ -1,0 +1,61 @@
+@import "../../theme/colors.scss";
+
+#mainNavBar {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    border-bottom: 2px solid $drop-bar;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: $white;
+    .logo {
+        height: 60px;
+        width: 115px;
+        object-fit: contain;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    .menu-option-container{
+        margin-left: auto;
+        display: flex;
+        margin-bottom: 0px;
+        li{
+            list-style-type: none;
+            margin: 0px 1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            color: $primary;
+            font-size: 0.9em;
+            color: $lightgray;
+            padding: 5px;
+            &:hover{
+                cursor: pointer;
+                opacity: 1;
+                color: $primary;
+            }
+            
+        }
+        .selected-route{
+            opacity: 0.9 !important;
+            color: $primary !important;
+            position: relative;
+            &::after{
+                content: " ";
+                position: absolute;
+                height: 2px;
+                width: 20px;
+                left: calc(50% - 10px);
+                background-color: $secondary;
+                bottom: 0px;
+            }
+        }
+        .logout-nav-item{
+            opacity: 1;
+            color: $primary;
+        }
+    }
+}

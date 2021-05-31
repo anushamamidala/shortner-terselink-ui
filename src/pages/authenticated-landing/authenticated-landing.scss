@@ -1,0 +1,14 @@
+@import '../../theme/colors.scss';
+
+#AuthenticatedLanding{
+    background-color: $lightgray3;
+    #authenticatedRouter{
+        width: 100%;
+        padding-top: 30px;
+        margin-left: 140px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 140px;
+    }
+}

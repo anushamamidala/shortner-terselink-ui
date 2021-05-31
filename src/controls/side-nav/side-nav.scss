@@ -1,0 +1,81 @@
+@import "../../theme/colors.scss";
+
+#sideNavContainer {
+    min-width: 135px;
+    width: 135px;
+    background: $primary;
+    border-radius: 0px 50px 50px 0px;
+    padding-top: 25px;
+    position: fixed;
+    z-index: 9999;
+    height: calc(100vh - 60px);
+    .profile-peek-container {
+        margin: 0px 10px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 15px;
+        .profile-picture {
+            height: 75px;
+            width: 75px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 2px solid #ffffff1f;
+        }
+        .profile-name {
+            font-weight: 500;
+            opacity: 0.9;
+            color: white;
+            margin-top: 20px;
+        }
+        .profile-email {
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 10px;
+            // color: $lightgray;
+            color: white;
+        }
+    }
+    .side-menu-items-container {
+        margin-top: 30px;
+        padding: 0px 10px;
+        .side-menu-item {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            opacity: 0.5;
+            height: 50px;
+            margin: 10px 0px;
+            cursor: pointer;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: $white;
+            .menu-icon {
+                height: 20px;
+                width: 20px;
+                object-fit: contain;
+                margin-right: 10px;
+                transform: translateY(-2px);
+                filter: $whiteFilter;
+            }
+        }
+        .selected-side-menu-item {
+            border-radius: 10px;
+            opacity: 1;
+            position: relative;
+            img {
+                filter: $whiteFilter;
+            }
+            &::after {
+                position: absolute;
+                content: " ";
+                bottom: 10px;
+                left: calc(50% - 5px);
+                height: 2px;
+                width: 10px;
+                background-color: $secondary;
+            }
+        }
+    }
+}

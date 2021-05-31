@@ -1,0 +1,6 @@
+export const APP_STATE = {
+    LOADING: 'LOADING',
+    VALID_USER: 'VALID_USER',
+    INVALID_USER: 'INVALID_USER'
+}
+

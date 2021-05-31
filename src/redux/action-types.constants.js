@@ -1,0 +1,8 @@
+// user.reducer
+export const UPDATE_USER_DETAILS = "UPDATE_USER_DETAILS"
+export const AUTH_TOKEN = "AUTH_TOKEN"
+
+// home.reducer
+export const UPDATE_OVER_ALL_STATS = "UPDATE_OVER_ALL_STATS"
+export const UPDATE_CLICKS_SUMMARY = "UPDATE_CLICKS_SUMMARY"
+export const UPDATE_RECENT_LINKS = "UPDATE_RECENT_LINKS"

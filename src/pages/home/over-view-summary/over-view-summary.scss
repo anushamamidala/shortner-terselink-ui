@@ -1,0 +1,48 @@
+@import "../../../theme/colors.scss";
+
+#overViewSummaryContainer {
+    .overview-title {
+        margin: 10px 25px;
+        color: $primary;
+    }
+    .loader-image{
+        height: 40px;
+        margin: 50px 0px 0px 50px;
+    }
+    .over-view-cards-container {
+        margin: 0px 20px !important;
+        justify-content: space-between;
+        .card-container {
+            border: 1px solid $lightgray2;
+            padding: 10px;
+            border-radius: 2px;
+            background-color: $white;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            min-width: calc(33% - 20px);
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 5px $lightgray2;
+        }
+        .category {
+            color: $lightgray;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+        .image-container {
+            height: 40px;
+            width: 40px;
+            background: $primaryShadow2;
+            border-radius: 50%;
+            filter: $greenFilter;
+        }
+        .orange-filter {
+            filter: $orangeFilter;
+        }
+        .pink-filter {
+            filter: $pinkFilter;
+        }
+        .over-view-card-icon {
+            height: 20px;
+        }
+    }
+}
